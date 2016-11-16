@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS `app`.`equipos`;
+CREATE TABLE  `app`.`equipos` (
+  `id_equipo` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_cliente` int(10) unsigned NOT NULL DEFAULT '0',
+  `id_propietario` int(10) unsigned NOT NULL DEFAULT '0',
+  `id_domicilio` int(10) unsigned NOT NULL DEFAULT '0',
+  `equipo` varchar(45) DEFAULT NULL,
+  `ip1` varchar(45) DEFAULT NULL,
+  `ip2` varchar(45) DEFAULT NULL,
+  `mac` varchar(45) DEFAULT NULL,
+  `marca` varchar(45) DEFAULT NULL,
+  `ssid` varchar(45) DEFAULT NULL,
+  `key` varchar(45) DEFAULT NULL,
+  `remot` varchar(45) DEFAULT NULL,
+  `iprem` varchar(45) DEFAULT NULL,
+  `estatus` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id_equipo`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
